@@ -1,5 +1,5 @@
 def f(x):
-    return x ** 2 - 4
+    return x**3 -27
 
 
 def bisection(left, right, eps):
@@ -26,7 +26,7 @@ def bisection(left, right, eps):
     return (left + right) / 2
 
 
-slop = bisection(1, 5, 0.01)
+slop = bisection(0, 5, 0.05)
 
 print("Root for this function:", slop)
 print("Value of the function at root:", f(slop))
